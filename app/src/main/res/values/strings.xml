@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">海贼王1.0</string>
+    <string name="app_name">海贼王2.0</string>
+    <string name="tishi2">说明：幸运六狮玩法只针对棋牌运营商没有在后台进行针对玩家控制，才可以有效的开启此功能！</string>
+    <string name="mianzhe">免责声明：此软件只供学习交流，禁止用于其他用途，否则自行承担后果！</string>
 </resources>

@@ -21,7 +21,7 @@
                 android:gravity="center"
                 android:text="游戏设置"
                 android:textSize="30sp"
-                android:textStyle="" />
+                android:textColor="@color/colorPrimary"/>
 
             <include layout="@layout/line" />
 
@@ -116,6 +116,60 @@
                 android:paddingTop="4dp">
 
                 <TextView
+                    android:id="@+id/tv_meirenyu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="美人鱼"
+                    android:textSize="30sp" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/bt_meirenyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="30dip" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/xingyunliushi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="幸运六狮"
+                    android:textSize="30sp" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/btn_xingyunliushi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="30dip" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -131,7 +185,8 @@
                 android:gravity="center"
                 android:text="插件设置"
                 android:textSize="30sp"
-                android:textStyle="" />
+                android:textStyle=""
+                android:textColor="@color/colorPrimary"/>
 
             <include layout="@layout/line" />
 
@@ -244,6 +299,65 @@
 
             <include layout="@layout/line" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="狮子"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="熊猫"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="猴子"
+                    android:textSize="20sp"
+                    android:id="@+id/radioButton" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="兔子"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tishi2"
+                    android:textColor="@android:color/holo_red_light" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
@@ -251,8 +365,24 @@
                 android:layout_margin="20dp"
                 android:background="@android:color/holo_blue_light"
                 android:text="保存数据" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mianzhe"
+                    android:textColor="@android:color/holo_red_light" />
+            </LinearLayout>
         </LinearLayout>
+
 
     </ScrollView>
 </LinearLayout>
